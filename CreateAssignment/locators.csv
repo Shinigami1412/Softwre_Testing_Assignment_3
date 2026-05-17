@@ -1,0 +1,32 @@
+item_name,locator_type,locator_value
+course_url,url,https://hcmutabc.moodlecloud.com/course/view.php?id=10
+edit_switch_label,xpath,"//label[contains(@for, '-editingswitch')] | //input[contains(@id, '-editingswitch')] | //*[contains(@id, '-editingswitch')] | //label[contains(., 'Edit mode')]"
+add_content_btn,xpath,"//button[@data-action='open-addingcontent'] | //button[@title='Add content'] | //i[contains(@class, 'fa-plus')]/parent::button"
+activity_option,xpath,"//button[@data-action='open-chooser'] | //button[contains(., 'Activity or resource')]"
+assignment_card,xpath,"//a[@data-action='add-chooser-option' and contains(., 'Assignment')] | //div[text()='Assignment']/parent::a"
+add_selected_btn,xpath,"//button[@data-action='add-selected-chooser-option'] | //button[contains(text(), 'Add')]"
+assignment_name_field,id,id_name
+submit_btn,id,id_submitbutton
+cancel_btn,id,id_cancel
+error_msg_locator,xpath,"//span[@class='error'] | //div[contains(@class, 'invalid-feedback')] | //div[@id='notice']"
+assertion_heading,xpath,"//h1[contains(@class, 'h2')] | //div[@role='main']//h1"
+allow_enable_cb,id,id_allowsubmissionsfromdate_enabled
+allow_day_sel,id,id_allowsubmissionsfromdate_day
+allow_month_sel,id,id_allowsubmissionsfromdate_month
+allow_year_sel,id,id_allowsubmissionsfromdate_year
+due_enable_cb,id,id_duedate_enabled
+due_day_sel,id,id_duedate_day
+due_month_sel,id,id_duedate_month
+due_year_sel,id,id_duedate_year
+cutoff_enable_cb,id,id_cutoffdate_enabled
+cutoff_day_sel,id,id_cutoffdate_day
+cutoff_month_sel,id,id_cutoffdate_month
+cutoff_year_sel,id,id_cutoffdate_year
+remind_enable_cb,id,id_gradingduedate_enabled
+remind_day_sel,id,id_gradingduedate_day
+remind_month_sel,id,id_gradingduedate_month
+remind_year_sel,id,id_gradingduedate_year
+sub_onlinetext_cb,id,id_assignsubmission_onlinetext_enabled
+sub_file_cb,id,id_assignsubmission_file_enabled
+grade_field,id,id_grade_modgrade_point
+grade_toggle,xpath,"//a[@data-bs-toggle='collapse' and contains(@href, 'id_modstandardgradecontainer')]"
