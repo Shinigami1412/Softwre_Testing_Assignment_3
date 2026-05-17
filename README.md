@@ -30,5 +30,7 @@ SubmitAnAssignment/
         assignment_level1.py
     level_2/
         assignment_level2.py
+        assignment_testdata.py
+        locator_config.csv
 ```
 
