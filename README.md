@@ -21,5 +21,10 @@ Create Assignment/
 		feature2_lvl2.py
 		locators.csv
 		test_data.csv
+SubmitAnAssignment/
+    level_1/
+        assignment_data.csv
+        assignment_level1.py
+    level_2/
 ```
 

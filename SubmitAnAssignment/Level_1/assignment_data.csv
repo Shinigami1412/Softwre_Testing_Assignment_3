@@ -1,0 +1,4 @@
+testcase_id,file_path,expected_result
+TC-003-001,files/valid.pdf,Submitted for grading
+TC-003-002,files/over1mb.pdf,File too large
+TC-003-005,files/fake.exe,error
