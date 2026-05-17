@@ -1,0 +1,22 @@
+test_id,assignment_title,allow_en,allow_d,allow_m,allow_y,due_en,due_d,due_m,due_y,cutoff_en,cutoff_d,cutoff_m,cutoff_y,remind_en,remind_d,remind_m,remind_y,sub_text,sub_file,grade_val,expected_result,expected_error_msg
+TC-002-001,Successful Creation,1,16,5,2026,1,20,5,2026,1,25,5,2026,1,22,5,2026,0,1,100,success,
+TC-002-002,,1,16,5,2026,1,20,5,2026,0,1,1,2026,0,1,1,2026,0,1,100,error,You must supply a value here.
+TC-002-003,Invalid Date Range,1,24,5,2026,1,20,5,2026,1,25,5,2026,1,22,5,2026,0,1,100,error,Due date must be after the allow submissions from date.
+TC-002-004,Read-Only Assignment,1,16,5,2026,1,20,5,2026,1,25,5,2026,1,22,5,2026,0,0,100,success,
+TC-002-005,Canceled Assignment,1,16,5,2026,1,20,5,2026,0,1,1,2026,0,1,1,2026,0,1,100,cancel,
+TC-002-006,Invalid Allow vs Due,1,20,5,2026,1,20,5,2026,1,25,5,2026,1,22,5,2026,0,1,100,error,Due date must be after the allow submissions from date.
+TC-002-007,Invalid Due vs Cutoff,1,16,5,2026,1,26,5,2026,1,25,5,2026,1,26,5,2026,0,1,100,error,Cut-off date cannot be earlier than the due date
+TC-002-008,Invalid Reminder Date,1,16,5,2026,1,20,5,2026,1,25,5,2026,1,18,5,2026,0,1,100,error,Remind me to grade by date cannot be earlier than the due date.
+TC-002-009,Allow Date Just Before Due,1,19,5,2026,1,20,5,2026,1,25,5,2026,1,22,5,2026,0,1,100,success,
+TC-002-010,Allow Date Equals Due Date,1,20,5,2026,1,20,5,2026,1,25,5,2026,1,22,5,2026,0,1,100,error,Due date must be after the allow submissions from date.
+TC-002-011,Due Date Equals Cutoff Date,1,16,5,2026,1,20,5,2026,1,20,5,2026,1,22,5,2026,0,1,100,success,
+TC-002-012,Due Date Exceeds Cutoff Date,1,16,5,2026,1,21,5,2026,1,20,5,2026,1,22,5,2026,0,1,100,error,Cut-off date cannot be earlier than the due date.
+TC-002-013,Reminder Equals Due Date,1,16,5,2026,1,20,5,2026,1,25,5,2026,1,20,5,2026,0,1,100,success,
+TC-002-014,Reminder Before Due Date,1,16,5,2026,1,20,5,2026,1,25,5,2026,1,18,5,2026,0,1,100,error,Remind me to grade by date cannot be earlier than the due date.
+TC-002-015,Reminder Equals Allow Date,1,16,5,2026,0,20,5,2026,1,25,5,2026,1,16,5,2026,0,1,100,success,
+TC-002-016,Reminder Before Allow Date,1,16,5,2026,0,20,5,2026,1,25,5,2026,1,15,5,2026,0,1,100,error,Remind me to grade by date cannot be earlier than the allow submissions from date.
+TC-002-017,Grade Below Minimum,1,16,5,2026,1,20,5,2026,1,25,5,2026,1,22,5,2026,0,1,-1,error,Invalid grade value. This must be an integer between 1 and 100
+TC-002-018,Normal Grade,1,16,5,2026,1,20,5,2026,1,25,5,2026,1,22,5,2026,0,1,100,success,
+TC-002-019,Grade Above Maximum,1,16,5,2026,1,20,5,2026,1,25,5,2026,1,22,5,2026,0,1,101,error,Invalid grade value. This must be an integer between 1 and 100
+TC-002-020,Valid Date Configuration,1,16,5,2026,1,20,5,2026,1,25,5,2026,1,22,5,2026,0,1,100,success,
+TC-002-021,Valid Grade Value,1,16,5,2026,1,20,5,2026,1,25,5,2026,1,22,5,2026,0,1,50,success,
